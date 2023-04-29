@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>见习text</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        li{
+            list-style: none;
+        }
+            #ul > li{
+                list-style: none;
+                float: left;
+                margin: 12px;
+                position: relative;
+            }
+            a{
+                color: #222;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #315efb;
+            }
+            li:hover ul{
+                background: rgb(221, 145, 228);
+                display: block;
+            }
+            .sub-menu{
+                position: absolute;
+                background: rgb(111, 111, 197);
+                display: none;
+            }
+            .sub-menu li{
+                padding: 20px;
+                width: 100px;
+            }
+            .sub-menu li:hover{
+               background: green;
+            }
+    </style>
+</head>
+<body>
+    <ul id="ul">
+        <li>
+            <a href="">推荐</a>
+        </li>
+        <li>
+            <a href="">主页</a>
+        </li>
+        <li>
+            <a href="">设置</a>
+            <ul class="sub-menu">
+                
+                <li>
+                    <a href="">账户管理</a>
+                </li>
+                <li>
+                    <a href="">画面</a>
+                </li>
+                <li>
+                    <a href="">语言</a>
+                </li>
+                <li>
+                    <a href="">音量</a>
+                </li>
+                
+            </ul>
+         </li>
+         
+         
+         </ul>
+</body>
+</html>
